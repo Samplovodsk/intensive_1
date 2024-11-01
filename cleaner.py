@@ -1,6 +1,6 @@
 import pandas as pd
 
-base = "c:/Users/Mrsoning/OneDrive/Документы/GitHub/Intensive_one/result.csv"
+base = "C:/Users/astah/OneDrive/Документы/GitHubintensive_1/result.csv"
 
 data = pd.read_csv(base)
 data = data.drop_duplicates()
@@ -33,7 +33,7 @@ data['price_per_meter'] = data.apply(meters, axis=1)
 data.to_csv(base, index=False)
 
 
-res = "c:/Users/Mrsoning/OneDrive/Документы/GitHub/Intensive_one/result.csv"
+res = "C:/Users/astah/OneDrive/Документы/GitHub/intensive_1/result.csv"
 
 zxc = pd.read_csv(base)
 total = zxc.drop(['street', 'house_number','residential_complex'], axis=1)
